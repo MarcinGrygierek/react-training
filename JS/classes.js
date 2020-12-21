@@ -12,6 +12,9 @@ class RubberDuck extends Duck {
         super(name);
         this.level = level;
     }
+    speak() {
+        console.log('Rubber ducks can"t speak');
+    }
     debug() {
         console.log(`${this.level} duck says - Your code is wrong on so many levels`);
     }
