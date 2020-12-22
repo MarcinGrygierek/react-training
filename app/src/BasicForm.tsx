@@ -1,5 +1,8 @@
 import { SyntheticEvent, useState } from "react";
 
+// Podejście kontrolowane - każdy input ma wartość ustawioną na podstawie stanu
+// Inne podejście to skorzystanie np. z redux-form lub react-hooks-form
+
 const BasicForm = () => {
     const [name, setName] = useState<string>('Marcin');
     const [age, setAge] = useState<number>();
