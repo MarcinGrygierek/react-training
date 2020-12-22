@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import AppProps from './AppProps';
+import AppState from './AppState';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <AppProps />,
+  <AppState />,
   document.getElementById('root')
 );
 
