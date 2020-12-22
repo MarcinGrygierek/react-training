@@ -5,9 +5,10 @@ import Wrapper from "./Wrapper";
 const AppNesting = () => {
     const [isVisible, setVisible] = useState(true);    
     return <Wrapper>
+        <div style={{display: isVisible ? 'block' : 'none'}}>asd</div>
         Testteststest
         {isVisible && <StatefulComponent defaultName='Marcin' />}
-        <Wrapper>Lorem ipsum</Wrapper>
+        <Wrapper children="asd" />
     </Wrapper>
 }
 
