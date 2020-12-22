@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import ButtonNested from "./ButtonNested";
 import StatefulComponent from "./StatefulComponent";
 import Wrapper from "./Wrapper";
 
@@ -9,6 +10,7 @@ const AppNesting = () => {
         Testteststest
         {isVisible && <StatefulComponent defaultName='Marcin' />}
         <Wrapper children="asd" />
+        <ButtonNested handleClick={() => setVisible(is => !is)} />
     </Wrapper>
 }
 
