@@ -1,7 +1,7 @@
 import StatefulComponent from "./StatefulComponent"
 
 const AppState = () => {
-    return <StatefulComponent />
+    return <StatefulComponent defaultName='Marcin' />
 }
 
 export default AppState;
