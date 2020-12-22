@@ -1,4 +1,4 @@
-import Card, { Skill } from "./Card";
+import {Card, Skill } from "./Card";
 import HelloProps from "./HelloProps"
 
 const App = () => {

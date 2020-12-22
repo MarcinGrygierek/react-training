@@ -56,4 +56,4 @@ interface DefaultProps {
  
  Card.defaultProps = defaultProps;
  
- export default Card;
+ export { Card };
