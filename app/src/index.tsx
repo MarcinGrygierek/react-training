@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import AppEvents from './AppEvents';
+import AppNesting from './AppNesting';
 import AppProps from './AppProps';
 import AppState from './AppState';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <AppEvents />,
+  <AppNesting />,
   document.getElementById('root')
 );
 
