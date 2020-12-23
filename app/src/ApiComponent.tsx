@@ -17,6 +17,7 @@ const ApiComponent = () => {
                 }
             });
             const data = await res.json();
+            console.log(data);
         } catch(e) {
             console.log('error', e);
         }

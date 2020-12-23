@@ -9,11 +9,12 @@ import AppNesting from './AppNesting';
 import AppProps from './AppProps';
 import AppState from './AppState';
 import AsyncAwaitComponent from './AsyncAwaitComponent';
+import { Likes } from './LikesRedux/Likes';
 import PromiseComponent from './PromiseComponent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <ApiComponent />,
+  <Likes />,
   document.getElementById('root')
 );
 
