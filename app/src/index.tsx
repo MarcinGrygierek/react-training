@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import AppEvents from './AppEvents';
 import AppForm from './AppForm';
+import AppLikes from './AppLikes';
 import AppNesting from './AppNesting';
 import AppProps from './AppProps';
 import AppState from './AppState';
+import AsyncComponent from './AsyncComponent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <AppForm />,
+  <AsyncComponent />,
   document.getElementById('root')
 );
 
