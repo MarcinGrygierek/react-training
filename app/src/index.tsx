@@ -12,9 +12,10 @@ import AsyncAwaitComponent from './AsyncAwaitComponent';
 import { Likes } from './LikesRedux/Likes';
 import PromiseComponent from './PromiseComponent';
 import reportWebVitals from './reportWebVitals';
+import Routing from './Routing';
 
 ReactDOM.render(
-  <Likes />,
+  <Routing />,
   document.getElementById('root')
 );
 
