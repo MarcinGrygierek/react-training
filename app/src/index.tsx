@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ApiComponent from './ApiComponent';
 import App from './App';
 import AppEvents from './AppEvents';
 import AppForm from './AppForm';
@@ -12,7 +13,7 @@ import PromiseComponent from './PromiseComponent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <AsyncAwaitComponent />,
+  <ApiComponent />,
   document.getElementById('root')
 );
 
