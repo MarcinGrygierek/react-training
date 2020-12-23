@@ -7,11 +7,11 @@ import AppLikes from './AppLikes';
 import AppNesting from './AppNesting';
 import AppProps from './AppProps';
 import AppState from './AppState';
-import AsyncComponent from './AsyncComponent';
+import PromiseComponent from './PromiseComponent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <AsyncComponent />,
+  <PromiseComponent />,
   document.getElementById('root')
 );
 

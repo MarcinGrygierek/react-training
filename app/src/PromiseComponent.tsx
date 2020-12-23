@@ -12,17 +12,39 @@ const AsyncComponent = () => {
                 const val = Math.random() * 9 + 1;
                 if(val > 5) resolve(val);
                 else reject(val);
-            }, 3000);
+            }, 500);
         });
 
-        promise.then(data => {
-            setResponse(data);
+        const promise2 = new Promise<string>((resolve, reject) => {
+            setTimeout(() =>{
+                const val = Math.random() * 9 + 1;
+                if(val > 5) resolve(val.toString());
+                else reject(val.toString());
+            }, 4000);
+        });
+
+        
+        const promises: [Promise<number>, Promise<string>] = [promise, promise2];
+
+        Promise.all(promises).then(data => {
+            console.log(data);
             setLoading(false);
-        }).catch((data: number) => {
+        }).catch((data: any[]) => {
             setIsError(true);
-            setResponse(data);
+            console.log(data);
             setLoading(false);
         });
+
+        // promise.then(data => {
+        //     setResponse(data);
+        //     setLoading(false);
+        // }).catch((data: number) => {
+        //     setIsError(true);
+        //     setResponse(data);
+        //     setLoading(false);
+        // });
+
+        console.log('Hello, I am after promise code');
     }, []);
 
     if(isLoading) return <p>Trwa ładowanie odpowiedzi</p>;
